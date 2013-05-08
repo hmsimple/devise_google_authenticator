@@ -19,7 +19,7 @@ module Devise # :nodoc:
       end
 
       def needs_gauth?
-        gauth_enabled == 1 && gauth_secret?
+        gauth_enabled && gauth_secret?
       end
 
       def get_qr
