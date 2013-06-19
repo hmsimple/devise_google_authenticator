@@ -22,7 +22,7 @@ module DeviseGoogleAuthenticator
     end
 
     def gauth_enabled
-      apply_devise_schema :gauth_enabled, Integer, {:default => 0}
+      apply_devise_schema :gauth_enabled, Boolean, { default: false }
     end
 
     def gauth_tmp
